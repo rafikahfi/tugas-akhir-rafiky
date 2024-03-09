@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front End - Rafi Kahfi Yugi</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    ">
+    <link rel="stylesheet" href="frontend.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#images">Images</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="header">
+        <div class="header-kiri">
+          <h3>Front End</h3>
+          <p>
+            Terus tingkatkan kemampuan front-end-mu untuk mencapai keberhasilan
+            dalam bidang ini dan mulai belajar sekarang!
+          </p>
+          <button type="button">Materi Pembelajaran</button>
+        </div>
+        <div class="header-kanan">
+          <img src="assets/konten_1.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="konten">
+        <div class="konten-kiri">
+          <img src="assets/Frame_125.png" alt="" />
+        </div>
+        <div class="konten-kanan">
+          <h3>Apa itu Front-End?</h3>
+          <p>
+            Front-End Developer adalah sebuah komunitas yang berfokus pada
+            pengembangan tampilan dan antarmuka pengguna (UI/UX) dalam dunia
+            pemrograman web. Komunitas ini dibentuk oleh mahasiswa dan
+            pengembang pemula yang tertarik dalam teknologi web dan ingin
+            mengembangkan keterampilan mereka dalam front-end development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="images">
+      <div class="materi">
+        <h3>Materi Pembelajaran</h3>
+        <p>
+          Jangan biarkan ketakutan atau ketidaktahuan menghalangi Anda. Mulailah
+          belajar teknologi sekarang!
+        </p>
+      </div>
+
+      <div class="program">
+        <div class="card">
+          <img src="assets/html.png" alt="" />
+          <h4>HTML</h4>
+          <p>
+            HTML adalah bahasa markup yang digunakan untuk membuat sebuah
+            halaman website.
+          </p>
+          <button type="button">Selengkapnya</button>
+        </div>
+        <div class="card">
+          <img src="assets/css.png" alt="" />
+          <h4>CSS</h4>
+          <p>
+            CSS bahasa yang digunakan untuk mengatur tampilan dari elemen yang
+            ditampilkan website.
+          </p>
+          <button type="button">Selengkapnya</button>
+        </div>
+        <div class="card">
+          <img src="assets/js.png" alt="" />
+          <h4>JavaScript</h4>
+          <p>
+            JavaScript adalah bahasa yang sering digunakan untuk membuat website
+            lebih interaktif.
+          </p>
+          <button type="button">Selengkapnya</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer1">
+        <div class="footer1">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="" />
+            <p>Bhayangkara Code Community</p>
+          </div>
+          <div class="footer-explain">
+            <div class="footer-path">
+              <h4>Learning Path</h4>
+              <p>Front End</p>
+              <p>UI/UX</p>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Bharacode@gmail.com ( +62 ) 081-2759-0824</p>
+            </div>
+            <div class="footer-socmed">
+              <h4>Follow For More</h4>
+              <a href="#"><img src="assets/fb.png" alt="" /></a>
+              <a href="#"><img src="assets/ig.png" alt="" /></a>
+              <a href="#"><img src="assets/linkedin.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer2">&copy; 2024 Bharacode All Right Reserved</p>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
